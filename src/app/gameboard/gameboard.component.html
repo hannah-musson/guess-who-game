@@ -1,0 +1,9 @@
+<mat-card class="pic-grid-card">
+  <mat-card-content color="secondary">
+    <mat-grid-list cols="6" rowHeight="210px">
+      <mat-grid-tile class="grid-container" *ngFor="let charCards of characters">
+        <img class="pic" [src]='charCards.pic' [alt]='charCards.name'>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-card-content>
+</mat-card>

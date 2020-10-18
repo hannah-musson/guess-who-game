@@ -1,0 +1,14 @@
+.grid-container{
+  margin: 10px;
+}
+
+.pic {
+  max-width: 150px;
+  max-height: 200px;
+  /* padding-top: 15px !important; */
+}
+
+
+.pic-grid-card {
+  background-color: #BBDEFB;
+}
