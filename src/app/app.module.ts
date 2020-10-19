@@ -10,7 +10,8 @@ import {MatCardModule} from '@angular/material/card';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import {MatGridListModule} from '@angular/material/grid-list';
-
+import {MatSelectModule} from '@angular/material/select';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 @NgModule({
@@ -25,7 +26,9 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatCardModule,
     BrowserAnimationsModule,
     FormsModule,
-    MatGridListModule
+    MatGridListModule,
+    MatSelectModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
