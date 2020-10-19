@@ -1,7 +1,14 @@
 <div class="full-page">
   <div class="grid-container">
     <h1>{{title}}</h1>
-    <h3 class="dropdown">dropdown placeholder</h3>
+    <mat-form-field class="dropdown" appearance="fill">
+      <mat-label>Select a universe</mat-label>
+      <mat-select [(value)]="selected">
+        <mat-option value="atla">Avatar: The Last Airbender</mat-option>
+        <mat-option value="lok">Legend of Korra</mat-option>
+        <mat-option value="tng">Star Trek: The Next Generation</mat-option>
+      </mat-select>
+    </mat-form-field>
     <app-card class="grid-item"></app-card>
     <app-gameboard class="grid-item"></app-gameboard>
   </div></div>

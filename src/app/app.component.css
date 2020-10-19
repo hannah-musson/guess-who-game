@@ -1,6 +1,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: 25% 70%;
+  margin: 10px;
 }
 
 .grid-item {
@@ -9,6 +10,11 @@
 
 .dropdown {
   text-align: right;
-  margin-right: 10px;
-  margin-top: auto;
+  margin-top: 10px;
+  width: 30%;
+  justify-self: end;
+}
+
+mat-option {
+  text-align: right;
 }
