@@ -2,7 +2,6 @@
   <mat-card-content color="secondary">
     <mat-grid-list cols="6" [gutterSize]="'5px'">
       <mat-grid-tile class="grid-container" *ngFor="let charCards of characters">
-        <!-- <img class="pic" [src]='charCards.pic' [alt]='charCards.name' (click)="picClicked(charCards)"> -->
         <img class="pic" src= "{{ charCards.showPic ? charCards.pic : charCards.notPic }}" [alt]="charCards.name" (click)="picClicked(charCards)">
       </mat-grid-tile>
     </mat-grid-list>
