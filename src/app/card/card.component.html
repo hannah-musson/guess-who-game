@@ -1,5 +1,8 @@
-<mat-card class="card-grid">
-  <mat-card-content>
-    <p>test card</p>
+<mat-card color="warn" class="card-grid">
+  <mat-card-content class="player-card">
+    <img class="player-card-image" [src]="playerCard.pic" [alt]="playerCard.name">
   </mat-card-content>
+  <div class="buttons">
+    <button mat-raised-button class="new-card-button" (click)="shuffleCards()"> New Card </button>
+  </div>
 </mat-card>
