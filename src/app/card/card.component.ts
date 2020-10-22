@@ -13,9 +13,12 @@ export class CardComponent implements OnInit {
 
   playerCard = this.characters[0];
 
-  constructor() { }
+  constructor() {
+    this.shuffleCards();
+  }
 
   ngOnInit(): void {
+    this.shuffleCards();
   }
 
   shuffleCards() {
