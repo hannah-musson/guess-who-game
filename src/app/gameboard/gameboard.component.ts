@@ -16,4 +16,8 @@ export class GameboardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  picClicked(card) {
+    card.showPic = !card.showPic;
+  }
+
 }
