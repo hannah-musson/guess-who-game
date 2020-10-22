@@ -3,8 +3,10 @@
 }
 
 .pic {
-  max-width: 150px;
-  max-height: 200px;
+  height: 100%;
+  width: 75%;
+  /* max-width: 150px;
+  max-height: 200px; */
   /* padding-top: 15px !important; */
 }
 
