@@ -1,3 +1,20 @@
 .card-grid {
-background-color: #BBDEFB
+  width: 80%;
+  background-color: #BBDEFB
+}
+
+.player-card {
+  display: flex;
+  justify-content: center;
+  /* max-width: 180px;
+  max-height: 240px; */
+}
+
+.new-card-button {
+  
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
 }
