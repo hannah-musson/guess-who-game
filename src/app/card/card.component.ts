@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Character } from "../character";
 import { ATLA } from "../atla-characters";
+import { LOK } from "../lok-characters";
 
 @Component({
   selector: 'app-card',
@@ -9,9 +10,9 @@ import { ATLA } from "../atla-characters";
 })
 export class CardComponent implements OnInit {
 
-  characters = ATLA;
+  characters = LOK;
 
-  playerCard = this.characters[0];
+  playerCard;
 
   constructor() {
     this.shuffleCards();
