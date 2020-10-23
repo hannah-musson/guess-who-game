@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Guess Who!';
-  selected = 'atla';
+  selectedFandom = 'ATLA';
+
+  changeFandom() {
+    console.log(this.selectedFandom);
+  }
+
 }
