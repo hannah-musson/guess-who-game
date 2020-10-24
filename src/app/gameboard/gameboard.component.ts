@@ -27,6 +27,7 @@ export class GameboardComponent implements OnInit {
         this.characters = ATLA;
         break;
     }
+    this.resetGameboard();
   }
 
   private _childMessage = '';
@@ -40,4 +41,9 @@ export class GameboardComponent implements OnInit {
     card.showPic = !card.showPic;
   }
 
+  resetGameboard() {
+    for (let i = 0; i < this.characters.length; i++) {
+      this.characters[i].showPic = true;
+    }
+  }
 }
