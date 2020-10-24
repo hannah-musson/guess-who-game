@@ -1,14 +1,19 @@
 <div class="full-page">
   <div class="grid-container">
-    <h1>{{title}}</h1>
-    <mat-form-field class="dropdown" appearance="fill">
-      <mat-label>Select a universe</mat-label>
-      <mat-select [(value)]="selectedFandom">
-        <mat-option value="ATLA">Avatar: The Last Airbender</mat-option>
-        <mat-option value="LOK">Legend of Korra</mat-option>
-        <!-- <mat-option value="tng">Star Trek: The Next Generation</mat-option> -->
-      </mat-select>
-    </mat-form-field>
-    <app-card class="grid-item" [childMessage]="selectedFandom"></app-card>
-    <app-gameboard class="grid-item" [childMessage]="selectedFandom" ></app-gameboard>
-  </div></div>
+    <div class="title">
+      <h1>Guess who!</h1>
+    </div>
+    <div class="dropdown-div">
+      <mat-form-field class="dropdown" appearance="fill">
+        <mat-label>Select a universe</mat-label>
+        <mat-select [(value)]="selectedFandom">
+          <mat-option value="ATLA">Avatar: The Last Airbender</mat-option>
+          <mat-option value="LOK">Legend of Korra</mat-option>
+          <!-- <mat-option value="tng">Star Trek: The Next Generation</mat-option> -->
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <app-card class="gard" [childMessage]="selectedFandom"></app-card>
+    <app-gameboard class="gameboard" [childMessage]="selectedFandom" ></app-gameboard>
+  </div>
+</div>
