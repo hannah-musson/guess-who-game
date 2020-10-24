@@ -5,5 +5,8 @@
         <img class="pic" src= "{{ charCards.showPic ? charCards.pic : charCards.notPic }}" [alt]="charCards.name" (click)="picClicked(charCards)">
       </mat-grid-tile>
     </mat-grid-list>
+    <div class="buttons-group">
+      <button mat-raised-button class="reset-button" (click)="resetGameboard()">Reset</button>
+    </div>
   </mat-card-content>
 </mat-card>
